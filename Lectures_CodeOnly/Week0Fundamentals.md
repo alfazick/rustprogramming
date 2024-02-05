@@ -1,4 +1,4 @@
-'''
+
 fn variable_assignment_immutability(){
     //Point#1 Variable assignments
     let msg = "Hello World";
@@ -24,9 +24,7 @@ fn variable_assignment_immutability(){
     println!("{}",num);
 
 }
-'''
 
-'''
 fn basic_control_flow(){
     let status = 500;
 
@@ -39,7 +37,7 @@ fn basic_control_flow(){
         println!("Page not found");
     }
 }
-'''
+
 fn concept_of_shadowing(){
     let num = 10;
     let num = num + 10; // like breaking mutability, but NO
@@ -54,7 +52,7 @@ fn concept_of_shadowing(){
     println!("{}",num);
 
 }
-'''
+
 fn concept_of_shadowing_mixed_up(){
     // sometimes you will see next usage pattern
     fn get_score() -> i32{
