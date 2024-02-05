@@ -1,5 +1,7 @@
 Reading a file and printing its contents. 
-You are tasked with extending the application to allow users to specify the file to be read as a command-line argument. The end result will be a GitHub repository containing the complete code for the enhanced file reader application.
+You are tasked with extending the application to allow users to specify the file to be read as a command-line argument. 
+
+The end result will be a GitHub repository containing the complete code for the enhanced file reader application.
 
 Goal: Simulate Linux:  cat filename 
 
