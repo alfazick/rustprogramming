@@ -2,7 +2,7 @@ Ok it's time for coding assignments.
 
 For this class, we will just use built-in automated testing capabilties in Rust
 
-I assume you hvae Rust installed, either in cloud or local machine
+I assume you have Rust installed, either in cloud or local machine
 If you have not done it yet please visit
 
 https://www.rust-lang.org/tools/install
@@ -15,10 +15,12 @@ For each passed tests you will be given points, depending on problem complexity.
 
 
 
-Your goal is to work in main.rs file only.
-Tests will be located in implement.rs file. Don't touch it. Your submission will be executed against a copy of this file.
+Your goal is to work in corresponding .rs file only.
+Tests will be located in the same.rs file. Don't touch it. 
+Your submission will be executed against a copy of this file.
 
 In main.rs file, you should fill out your full_name and class variables.
+And can use to see if your logic works in general.
 
 Let's look at simple example of how test capabilities work in rust.
 
