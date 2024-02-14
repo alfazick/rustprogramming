@@ -1,0 +1,64 @@
+1. Implementing the new Method
+Purpose: Initializes a new instance of a Book.
+Parameters:
+title: String - The title of the book.
+author: String - The author of the book.
+Returns: A new Book instance with status set to Available.
+
+
+2. Implementing the check_out Method
+Purpose: Marks the book as checked out and sets the duration for how long it will be checked out.
+Parameters:
+days: i32 - The number of days the book is checked out for.
+Action: Updates the book's status to CheckedOut with the specified number of days.
+
+
+3. Implementing the return_book Method
+Purpose: Marks the book as returned, making it available for borrowing again.
+Action: Sets the book's status back to Available.
+
+
+4. Implementing the send_for_repair Method
+Purpose: Marks the book as being in repair and logs repair details.
+Parameters:
+notes: String - Notes about what repairs are needed.
+Action: Updates the book's status to InRepair with the provided notes.
+
+
+5. Implementing the mark_as_being_read Method
+Purpose: Marks the book as currently being read by someone.
+Action: Sets the book's status to BeingRead.
+
+
+6. Implementing the report_lost Method
+Purpose: Reports the book as lost.
+Action: Changes the book's status to Lost.
+
+
+7. Implementing the display_status Method
+Purpose: Provides a human-readable description of the book's current status.
+Returns: A String detailing the book's status. 
+
+When implementing the display_status method in the Book struct, 
+return a string that matches the following criteria based on the book's status. 
+Use pattern matching to determine the status and construct the return string accordingly.
+
+Available:
+Return: "{title} is available for borrowing."
+Example: "The Rust Programming Language is available for borrowing."
+
+CheckedOut (days):
+Return: "{title} is checked out. Days until due: {days}"
+Example: "The Rust Programming Language is checked out. Days until due: 14"
+
+BeingRead:
+Return: "{title} is currently being read."
+Example: "The Rust Programming Language is currently being read."
+
+InRepair (notes):
+Return: "{title} is in repair. Notes: {notes}"
+Example: "The Rust Programming Language is in repair. Notes: Page 99 is torn."
+
+Lost:
+Return: "{title} has been reported lost."
+Example: "The Rust Programming Language has been reported lost."
