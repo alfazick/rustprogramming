@@ -1,9 +1,11 @@
 ## Systems Programming With Rust Course:
 
-**Week#1 Dev Environment Setup. Rapid CS 101 Ideas.**
+**Week#0 Dev Environment Setup. Rapid CS 101 Ideas.**
 
-**Week#2 Rust Memory Management**
+**Week#1 Rust Memory Management**
 
-**Week#3 Compound Data Types: Struct+Enum+PatternMatching**
+**Week#2 Compound Data Types: Struct+Enum+PatternMatching**
+
+**Week#3 Collections:Vector+String+Hashmap**
 
 
