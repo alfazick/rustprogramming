@@ -9,3 +9,6 @@
 **Week#3 Collections:Vector+String+Hashmap**
 
 **Week#4-5 Error Handling: Anyhow**
+
+**Week#6 Generics,Traits**
+
