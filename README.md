@@ -10,5 +10,5 @@
 
 **Week#4-5 Error Handling: Anyhow**
 
-**Week#6 Generics,Traits**
+**Week#6 Generics,Traits,Intro to Memory operation**
 
