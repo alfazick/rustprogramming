@@ -12,3 +12,4 @@
 
 **Week#6 Generics,Traits,Intro to Memory operation**
 
+**Week#7 Closures,RegularVsBufferedRead**
