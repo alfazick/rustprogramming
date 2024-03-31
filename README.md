@@ -13,3 +13,5 @@
 **Week#6 Generics,Traits,Intro to Memory operation**
 
 **Week#7 Closures,RegularVsBufferedRead**
+
+**Week#8 Secure Coding Zeroise,SmartPointers** smart pointers todo
