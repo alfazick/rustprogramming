@@ -14,4 +14,4 @@
 
 **Week#7 Closures,RegularVsBufferedRead**
 
-**Week#8 Secure Coding Zeroise,SmartPointers** smart pointers todo
+**Week#8 Secure Coding Zeroise,SmartPointers**
