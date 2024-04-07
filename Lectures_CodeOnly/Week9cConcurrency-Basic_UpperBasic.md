@@ -63,7 +63,7 @@ fn share_data_between_threads_with_arc() {
 
 
 fn share_data_between_threads_through_channel() {
-    // multiple sender, single reciever
+    // multiple producer, single consumer
     use std::sync::mpsc;
 
     println!("Concurrency");
