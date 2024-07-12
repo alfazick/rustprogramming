@@ -1,0 +1,14 @@
+
+
+
+Core:
+01rust-project-introduction.md
+02fundamentals.md
+03rust-data-types-guide.md
+04rust-basic-collections.md
+05ModuleRecaprust-programming-fundamentals.md
+
+
+Extra:
+01cargo-docs-and-libraries.md
+01rust-unit-testing-basics.md
