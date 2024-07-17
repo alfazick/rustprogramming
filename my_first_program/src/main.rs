@@ -1,3 +1,14 @@
+/*fn main() {
+   println!("Hello, my name is Jesus Martinez, IM going to the moon!");
+}
+
+*/
+
+fn message(favenum: i32) -> () {
+    println!("just Function {}", favenum);
+    return ();
+}
+
 fn main() {
-    println!("Hello, my name is Jesus Martinez, IM going to the moon!");
+    message(457);
 }
