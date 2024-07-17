@@ -11,15 +11,16 @@ fn celsius_to_fahrenheit(temperature: f64) -> f64 {
 fn main() {
     let mut fahrenheit: f64 = 32.0;
     let mut num = 0; // iterator
-    loop {             //loop
+    loop {
+        //loop
         if num >= 6 {
-            break;  // break
+            break; // break
         }
 
-        let ftc: f64 = fahrenheit_to_celsius(fahrenheit);   //fahrenheit to celsius
-        println!("Celsius is {}*C\n", ftc);                 //print Celsius
-        println!("Fahrenheit is {}*F\n", celsius_to_fahrenheit(ftc));     // celsius to fahrenheit
-        num += 1;                       // increase iterator by 1
-        fahrenheit += 1.0 as f64;        // increase fahrenheit by 1
+        let ftc: f64 = fahrenheit_to_celsius(fahrenheit); //fahrenheit to celsius
+        println!("Celsius is {}*C\n", ftc); //print Celsius
+        println!("Fahrenheit is {}*F\n", celsius_to_fahrenheit(ftc)); // celsius to fahrenheit
+        num += 1; // increase iterator by 1
+        fahrenheit += 1.0 as f64; // increase fahrenheit by 1
     }
 }
