@@ -94,7 +94,7 @@ fn main() {
     };
 
     let agent2 = LLMAgent {
-        name: String::from("GPT-3"),
+        model: String::from("GPT-3"),
         temperature: 0.9,
         ..agent1  // This syntax copies the rest of the fields from agent1
     };
