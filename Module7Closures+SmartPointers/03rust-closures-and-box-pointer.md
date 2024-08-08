@@ -6,7 +6,7 @@ This document explores the concepts of closures, function pointers, and the `Box
 1. [Closures](#closures)
 2. [Function Pointers](#function-pointers)
 3. [Box Smart Pointer](#box-smart-pointer)
-4. [Advanced Topics](#advanced-topics)
+4. [Closure Traits](#closure-traits)
 
 ## Closures
 
@@ -130,15 +130,47 @@ fn box_polymorphism() {
 
 This example demonstrates how `Box<dyn Trait>` can be used to achieve runtime polymorphism in Rust.
 
-## Advanced Topics
+## Closure Traits
 
 ### Closure Traits: Fn, FnMut, and FnOnce
+
+In order to avoid writing full signature when passing a function as a parameter, convenient way is to use a closures.
+But, you still need to be more specific, because closures came in different flavors
+and Box pointer will help us
 
 Rust has three closure traits: `Fn`, `FnMut`, and `FnOnce`. These traits define how the closure captures and interacts with its environment.
 
 1. `Fn`: The closure captures by reference (`&T`)
 2. `FnMut`: The closure captures by mutable reference (`&mut T`)
 3. `FnOnce`: The closure captures by value (`T`)
+
+### Closure that Borrows to Read (Fn)
+```rust
+fn using_closure_as_parameter_and_capture_environment() {
+    
+    fn add(x: i32, y:i32) -> i32 {
+        x + y
+    }
+
+    // story here changes dramatically.
+    // Fn is a trait, which is needed to be dispatched at the runtime
+    // Box puts that function into heap
+    fn calculator(x:i32,y:i32, operation: Box<dyn Fn(i32,i32) -> i32 + '_>) {
+        let result = operation(x,y);
+        println!("result of operation {}", result);    
+    }
+
+    calculator(1,2,Box::new(add)); 
+    calculator(1,2,Box::new(|x,y| x + y)); // works as expected
+
+    let z = 3;
+    calculator(1,2,Box::new(|x,y| x + y + z)); 
+    // z is an unexpected guess in our closure, because it's not passed,
+    // between pipes, but due to the nature of closures which captures the environment I can stil access it and need to make sure to incdicate it's lifetime.
+
+}
+```
+### Closure that Borrows to Mutate (FnMut)
 
 ```rust
 fn capture_modify_environment() {
