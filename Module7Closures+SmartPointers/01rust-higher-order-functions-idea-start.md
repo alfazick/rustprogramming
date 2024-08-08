@@ -116,7 +116,7 @@ Let's break down this example to understand how it demonstrates higher-order fun
    }
    ```
    - This function prints the values of our `Data` items without using any closures
-   - It's used in place of the previous `println!` statements that contained closures
+
 
 5. **Using the Higher-Order Function**:
    ```rust
