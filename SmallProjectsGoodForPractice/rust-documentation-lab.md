@@ -116,7 +116,7 @@ use actix_files as fs;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    println!("Documentation server running at http://127.0.0.1:8080");
+    println!("Documentation server running at http://0.0.0.0:8080");
     HttpServer::new(|| {
         App::new().service(
             fs::Files::new("/", "./target/doc")
@@ -124,7 +124,7 @@ async fn main() -> std::io::Result<()> {
                 .index_file("index.html"),
         )
     })
-    .bind("127.0.0.1:8080")?
+    .bind("0.0.0.0:8080")?
     .run()
     .await
 }
@@ -136,7 +136,7 @@ async fn main() -> std::io::Result<()> {
 cargo run --bin doc_server
 ```
 
-Visit `http://127.0.0.1:8080` in your web browser to view the documentation.
+Visit `http://0.0.0.0:8080` in your web browser to view the documentation.
 
 ## Practice Exercises
 
@@ -146,13 +146,9 @@ Visit `http://127.0.0.1:8080` in your web browser to view the documentation.
 
 3. Add a section to the crate-level documentation explaining how to use the library in a project.
 
-4. Generate documentation that includes private items (hint: use `cargo doc --document-private-items`).
+4. Modify the web server to log each request to the console.
 
-5. Modify the web server to log each request to the console.
 
-## Bonus Challenge
-
-Create a custom derive macro that automatically generates documentation for struct fields. Use it on a new struct in your library.
 
 ## Conclusion
 
