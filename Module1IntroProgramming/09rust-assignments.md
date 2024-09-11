@@ -45,5 +45,6 @@ Create a simple number guessing game in Rust. The program should:
      - If the guess was correct, break the loop
    - After the loop ends, print how many guesses it took (you'll need to track this in a variable)
 
-These assignments now strictly use only the concepts covered in the provided materials: variables, mutability, basic data types (integers, booleans), arrays, functions, if-else expressions, and the three types of loops (loop, while, for). They don't introduce any new concepts beyond what was explicitly mentioned in the content you provided.
+These assignments strictly use only the concepts covered in the provided materials: variables, mutability, basic data types (integers, booleans), arrays, functions, if-else expressions, and the three types of loops (loop, while, for). 
+
 
