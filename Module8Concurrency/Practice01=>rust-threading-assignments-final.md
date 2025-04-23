@@ -1,6 +1,7 @@
 # Rust Threading Assignments
 
-This document contains four threading assignments focused on multithreading concepts in Rust, complete with starter code and helpful hints. These assignments will help you understand and implement common threading patterns in Rust.
+Assignments focused on multithreading concepts in Rust, complete with starter code and helpful hints. 
+These assignments will help you understand and implement common threading patterns in Rust.
 
 ## Assignment 1: Spawning Threads and Joining Them
 
@@ -314,14 +315,3 @@ Here's a quick summary of the key concepts covered in these assignments:
    - Special values for signaling termination
    - Shared receivers with Arc and Mutex
 
-## Completion Checklist
-
-For each assignment, ensure you:
-
-1. Understand the problem statement and requirements
-2. Complete the TODOs in the starter code
-3. Test your implementation with different inputs/configurations
-4. Handle errors and edge cases appropriately
-5. Ensure proper cleanup of resources
-
-Good luck with your Rust threading assignments!
